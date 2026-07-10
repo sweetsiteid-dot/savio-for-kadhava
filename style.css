@@ -1,0 +1,348 @@
+/* =========================
+   HAPPY 2ND MENSIVE 🖤
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(
+        180deg,
+        #050505 0%,
+        #101010 40%,
+        #171717 70%,
+        #202020 100%
+    );
+    color:white;
+    overflow-x:hidden;
+}
+
+/* =========================
+   LOADER
+========================= */
+
+#loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:linear-gradient(
+        135deg,
+        #000000,
+        #151515,
+        #2b2b2b
+    );
+    z-index:99999;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.loader-content{
+    padding:30px;
+}
+
+.loader-content h1{
+    font-size:70px;
+    margin-bottom:15px;
+    animation:pulse 2s infinite;
+}
+
+.loader-content h2{
+    font-size:2rem;
+    margin-bottom:10px;
+    color:white;
+}
+
+.loader-content p{
+    color:#d6d6d6;
+    margin-bottom:30px;
+}
+
+#startBtn{
+    border:none;
+    padding:14px 35px;
+    border-radius:999px;
+    background:white;
+    color:black;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#startBtn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(255,255,255,.15);
+}
+
+@keyframes pulse{
+    50%{
+        transform:scale(1.1);
+    }
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at top,
+        rgba(255,255,255,.08),
+        transparent 60%
+    );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:850px;
+}
+
+.hero-content h3{
+    font-weight:400;
+    letter-spacing:2px;
+    margin-bottom:15px;
+    color:#d9d9d9;
+}
+
+.hero-content h1{
+    font-size:5rem;
+    line-height:1.1;
+    color:white;
+
+    text-shadow:
+    0 0 15px rgba(255,255,255,.15),
+    0 0 30px rgba(255,255,255,.08);
+}
+
+.hero-content h2{
+    margin-top:20px;
+    font-weight:500;
+    color:white;
+}
+
+.hero-content p{
+    margin-top:20px;
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#d9d9d9;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+
+    padding:15px 35px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+    color:black;
+    background:white;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(255,255,255,.15);
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.gallery h2{
+    font-size:2.5rem;
+    margin-bottom:40px;
+    color:white;
+}
+
+.slider-container{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+}
+
+.slider-container img{
+    width:100%;
+    height:550px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.5);
+
+    transition:.6s;
+}
+
+/* =========================
+   LETTER
+========================= */
+
+.letter{
+    padding:100px 20px;
+}
+
+.letter h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+    color:white;
+}
+
+.letter-box{
+    max-width:900px;
+    margin:auto;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:35px;
+
+    padding:40px;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.4);
+}
+
+.letter-box p{
+    line-height:2.1;
+    font-size:1.05rem;
+    color:white;
+}
+
+.ending{
+    text-align:center;
+    font-size:1.2rem;
+    font-weight:700;
+    color:white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.footer h2{
+    font-size:2rem;
+    margin-bottom:15px;
+    color:white;
+}
+
+.footer p{
+    color:#d6d6d6;
+}
+
+/* =========================
+   FALLING HEART
+========================= */
+
+.heart{
+    position:fixed;
+    top:-50px;
+    font-size:22px;
+    pointer-events:none;
+    z-index:9999;
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+
+    from{
+        transform:
+        translateY(-50px)
+        rotate(0deg);
+    }
+
+    to{
+        transform:
+        translateY(110vh)
+        rotate(360deg);
+    }
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .hero-content h2{
+        font-size:1.2rem;
+    }
+
+    .gallery h2,
+    .letter h2{
+        font-size:2rem;
+    }
+
+    .slider-container img{
+        height:400px;
+    }
+
+    .letter-box{
+        padding:25px;
+    }
+
+    .letter-box p{
+        font-size:.95rem;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .hero-content h1{
+        font-size:2.4rem;
+    }
+
+    .slider-container img{
+        height:320px;
+    }
+
+}
