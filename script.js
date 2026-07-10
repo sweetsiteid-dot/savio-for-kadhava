@@ -1,5 +1,5 @@
 // =========================
-// HAPPY 2ND MENSIVE 🖤
+// HAPPY 2ND MENSIVE 💙
 // =========================
 
 const startBtn = document.getElementById("startBtn");
@@ -60,7 +60,7 @@ setInterval(() => {
 }, 3500);
 
 // =========================
-// FALLING HEARTS
+// FALLING BLUE HEARTS
 // =========================
 
 function createHeart(){
@@ -70,12 +70,9 @@ function createHeart(){
     heart.classList.add("heart");
 
     const hearts = [
-        "🖤",
-        "🩶",
+        "💙",
         "🤍",
-        "🩶",
-        "🖤",
-        "✦"
+        "🩵"
     ];
 
     heart.innerHTML =
@@ -101,7 +98,7 @@ function createHeart(){
 setInterval(createHeart, 250);
 
 // =========================
-// FADE IN EFFECT
+// FADE IN SCROLL EFFECT
 // =========================
 
 const observer = new IntersectionObserver(
@@ -148,7 +145,7 @@ sections.forEach(section => {
 });
 
 // =========================
-// HERO FLOAT EFFECT
+// HERO FLOATING EFFECT
 // =========================
 
 const heroTitle =
@@ -168,14 +165,14 @@ window.addEventListener("mousemove", (e) => {
 });
 
 // =========================
-// IMAGE TRANSITION
+// SMOOTH IMAGE APPEAR
 // =========================
 
 slider.style.transition =
 "opacity .6s ease";
 
 // =========================
-// PARALLAX EFFECT
+// AUTO SCROLL GLOW
 // =========================
 
 window.addEventListener("scroll", () => {
@@ -188,15 +185,15 @@ window.addEventListener("scroll", () => {
 });
 
 // =========================
-// LOVE MESSAGE
+// CONSOLE LOVE MESSAGE
 // =========================
 
 console.log(
-"%cHappy 2nd Mensive 🖤",
-"font-size:24px;color:white;font-weight:bold;"
+"%cHappy 2nd Mensive 💙",
+"font-size:24px;color:#59c7ff;font-weight:bold;"
 );
 
 console.log(
 "%cMade with love by Savio Madhava for Kadhava Renjiro",
-"font-size:14px;color:#cfcfcf;"
+"font-size:14px;color:#89d7ff;"
 );
