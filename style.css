@@ -1,5 +1,5 @@
 /* =========================
-   HAPPY 2ND MENSIVE 🖤
+   HAPPY 2ND MENSIVE 💙
 ========================= */
 
 *{
@@ -13,12 +13,13 @@ body{
     font-family:'Poppins',sans-serif;
     background:linear-gradient(
         180deg,
-        #050505 0%,
-        #101010 40%,
-        #171717 70%,
-        #202020 100%
+        #eaf9ff 0%,
+        #d7f2ff 25%,
+        #c1eaff 50%,
+        #b1e3ff 75%,
+        #9edcff 100%
     );
-    color:white;
+    color:#0f2d5c;
     overflow-x:hidden;
 }
 
@@ -34,9 +35,9 @@ body{
     height:100vh;
     background:linear-gradient(
         135deg,
-        #000000,
-        #151515,
-        #2b2b2b
+        #9ad8ff,
+        #7bcfff,
+        #bdeeff
     );
     z-index:99999;
 
@@ -59,11 +60,12 @@ body{
 .loader-content h2{
     font-size:2rem;
     margin-bottom:10px;
-    color:white;
+    color:#08244d;
 }
 
 .loader-content p{
-    color:#d6d6d6;
+    color:#0f2d5c;
+    opacity:.9;
     margin-bottom:30px;
 }
 
@@ -72,7 +74,7 @@ body{
     padding:14px 35px;
     border-radius:999px;
     background:white;
-    color:black;
+    color:#57b9ff;
     font-weight:600;
     cursor:pointer;
     transition:.3s;
@@ -80,7 +82,7 @@ body{
 
 #startBtn:hover{
     transform:translateY(-3px);
-    box-shadow:0 10px 25px rgba(255,255,255,.15);
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
 @keyframes pulse{
@@ -96,9 +98,11 @@ body{
 .hero{
     min-height:100vh;
     position:relative;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     text-align:center;
     padding:20px;
 }
@@ -110,7 +114,7 @@ body{
     background:
     radial-gradient(
         circle at top,
-        rgba(255,255,255,.08),
+        rgba(255,255,255,.4),
         transparent 60%
     );
 }
@@ -125,30 +129,30 @@ body{
     font-weight:400;
     letter-spacing:2px;
     margin-bottom:15px;
-    color:#d9d9d9;
+    color:#0f2d5c;
 }
 
 .hero-content h1{
     font-size:5rem;
     line-height:1.1;
-    color:white;
+    color:#08244d;
 
     text-shadow:
-    0 0 15px rgba(255,255,255,.15),
-    0 0 30px rgba(255,255,255,.08);
+    0 0 15px rgba(255,255,255,.7),
+    0 0 30px rgba(255,255,255,.4);
 }
 
 .hero-content h2{
     margin-top:20px;
     font-weight:500;
-    color:white;
+    color:#0f2d5c;
 }
 
 .hero-content p{
     margin-top:20px;
     font-size:1.1rem;
     line-height:1.8;
-    color:#d9d9d9;
+    color:#0f2d5c;
 }
 
 .btn{
@@ -160,7 +164,8 @@ body{
     border-radius:999px;
 
     text-decoration:none;
-    color:black;
+    color:#57c0ff;
+
     background:white;
 
     font-weight:600;
@@ -170,7 +175,7 @@ body{
 
 .btn:hover{
     transform:translateY(-4px);
-    box-shadow:0 10px 25px rgba(255,255,255,.15);
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
 /* =========================
@@ -185,7 +190,7 @@ body{
 .gallery h2{
     font-size:2.5rem;
     margin-bottom:40px;
-    color:white;
+    color:#08244d;
 }
 
 .slider-container{
@@ -203,7 +208,7 @@ body{
     border-radius:30px;
 
     box-shadow:
-    0 15px 40px rgba(0,0,0,.5);
+    0 15px 40px rgba(0,0,0,.15);
 
     transition:.6s;
 }
@@ -220,38 +225,39 @@ body{
     text-align:center;
     margin-bottom:40px;
     font-size:2.5rem;
-    color:white;
+    color:#08244d;
 }
 
 .letter-box{
+
     max-width:900px;
     margin:auto;
 
-    background:rgba(255,255,255,.08);
+    background:rgba(255,255,255,.35);
 
     backdrop-filter:blur(20px);
 
-    border:1px solid rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.4);
 
     border-radius:35px;
 
     padding:40px;
 
     box-shadow:
-    0 10px 35px rgba(0,0,0,.4);
+    0 10px 35px rgba(0,0,0,.08);
 }
 
 .letter-box p{
     line-height:2.1;
     font-size:1.05rem;
-    color:white;
+    color:#0f2d5c;
 }
 
 .ending{
     text-align:center;
     font-size:1.2rem;
     font-weight:700;
-    color:white;
+    color:#08244d;
 }
 
 /* =========================
@@ -266,11 +272,11 @@ body{
 .footer h2{
     font-size:2rem;
     margin-bottom:15px;
-    color:white;
+    color:#08244d;
 }
 
 .footer p{
-    color:#d6d6d6;
+    color:#0f2d5c;
 }
 
 /* =========================
@@ -280,9 +286,13 @@ body{
 .heart{
     position:fixed;
     top:-50px;
+
     font-size:22px;
+
     pointer-events:none;
+
     z-index:9999;
+
     animation:fall linear forwards;
 }
 
@@ -345,4 +355,4 @@ body{
         height:320px;
     }
 
-}
+       }
